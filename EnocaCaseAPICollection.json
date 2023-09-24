@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "ab141702-ab1c-4e6f-8834-53aae60499ee",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17698856"
+	},
+	"item": [
+		{
+			"name": "getAllCompanies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8082/api/company"
+			},
+			"response": []
+		},
+		{
+			"name": "createNewCompany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyName\" : \"asdadasda\",\r\n    \"employeeNumber\" : 500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8082/api/company"
+			},
+			"response": []
+		},
+		{
+			"name": "updateCompany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 2,\r\n    \"companyName\" : \"asdadasda\",\r\n    \"employeeNumber\" : 500\r\n     \r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8082/api/company/update"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCompany",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8082/api/company/delete/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getOneCompany",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8082/api/company/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Allemployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8082/api/employee"
+			},
+			"response": []
+		},
+		{
+			"name": "getOneEmployee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8082/api/employee/2"
+			},
+			"response": []
+		},
+		{
+			"name": "createNewEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeName\" : \"ibrahim ethem\",\r\n    \"employeePhone\" : \"5433458656\",\r\n    \"companyId\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8082/api/employee"
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 2,\r\n    \"employeeName\" : \"ibrahim ethem\",\r\n    \"employeePhone\" : \"5433458656\",\r\n    \"companyId\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8082/api/employee/update"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8082/api/employee/delete/1"
+			},
+			"response": []
+		}
+	]
+}
