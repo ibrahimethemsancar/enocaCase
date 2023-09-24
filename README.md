@@ -22,6 +22,8 @@ server.port=8082 -> projenin çalışmasını istediğiniz portu değiştirebili
 
 Projede Employee ve Company Entity'leri için 2 adet controller yazılmış, her iki entity onetoMany ilişkisi ile birbirine bağlanmıştır.
 
+EnocaCaseAPICollection.json dosyasında projede bulunan apilerin collection'ları iletilmiştir, Postman'a import ederek API'ler test edilebilir.
+
 
 
 
