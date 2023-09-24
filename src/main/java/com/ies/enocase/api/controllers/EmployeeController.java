@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(Paths.apiPrefix + "employees")
+@RequestMapping(Paths.apiPrefix + "employee")
 public class EmployeeController {
     private IEmployeeService employeeService;
 
