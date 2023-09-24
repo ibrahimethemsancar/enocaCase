@@ -51,7 +51,7 @@ public class CompanyController {
             throw new RuntimeException(e.getMessage());
         }
     }
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Result> deleteCompany(@PathVariable Long id) {
         return ResponseEntity.ok(this.companyService.deleteCompany(id));
     }

@@ -58,7 +58,7 @@ public class EmployeeController {
             throw new RuntimeException(e.getMessage());
         }
     }
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Result> deleteEmployee(@PathVariable Long id) {
         return ResponseEntity.ok(employeeService.deleteEmployee(id));
     }

@@ -23,6 +23,7 @@ public class EmployeeResponseConverter {
 
     public Employee mapEmployeeRequestToEmployee(EmployeeRequest employeeRequest, Company company){
         Employee response = modelMapper.map(employeeRequest, Employee.class);
+        response.setId(0);
         response.setCompany(company);
         response.setCDate(LocalDateTime.now());
         return response;
